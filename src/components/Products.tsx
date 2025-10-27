@@ -110,7 +110,7 @@ const Products: React.FC = () => {
 
       if (data) {
         const { data: publicUrlData } = supabase.storage
-          .from('isaqimages')
+          .from('issaqimages')
           .getPublicUrl(data.path);
 
         uploadedUrls.push(publicUrlData.publicUrl);
